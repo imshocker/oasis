@@ -1,0 +1,111 @@
+/* Reset some default styles */
+/* body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2px;
+}
+
+header {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+
+}
+
+nav {
+    background-color: #555;
+    padding: 2px;
+}
+
+nav ul {
+    text-align: end;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+
+.section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.project {
+    position: relative; /* Add this to create a positioning context for child elements */
+    margin-bottom: 40px;
+}
+
+.project a {
+    display: block; /* Make the entire <div> clickable */
+    position: relative; /* Create a stacking context for the <img> */
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.3s; /* Add a transition for the opacity property */
+}
+
+.project img:hover {
+    opacity: 0.7; /* Reduce opacity on hover (you can adjust the value) */
+}
+
+.project h3 {
+    position: absolute; /* Position the h3 element absolutely within the .project div */
+    top: 75%; /* Center vertically */
+    left: 40%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center precisely */
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1; /* Ensure the text is above the image */
+}
+
+.project a:hover h3 {
+    opacity: 0; /* Hide the <h3> on image hover */
+}
+
+.project p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.project a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.project a:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
